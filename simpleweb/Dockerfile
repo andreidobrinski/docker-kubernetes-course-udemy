@@ -2,6 +2,7 @@
 FROM node:alpine
 
 # Install deps
+COPY ./ ./
 RUN npm install
 
 # Default command
