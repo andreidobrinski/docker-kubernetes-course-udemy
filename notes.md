@@ -102,3 +102,9 @@ Dockerfile
   Run `docker build .` when running from a Dockerfile
 
   Docker builds will check cache before making fetch requests for dependencies
+
+Run `docker build -t andreidobrinski/redis:latest .` to tag an image.
+
+- convention is username/reponame:version(tag)
+- can later be run with `docker run andreidobrinski/redis` without specifying a tag
+- no tag specified = latest will run
