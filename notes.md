@@ -100,3 +100,5 @@ Dockerfile
   - startup command for image
 
   Run `docker build .` when running from a Dockerfile
+
+  Docker builds will check cache before making fetch requests for dependencies
