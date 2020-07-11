@@ -77,3 +77,14 @@ CLI
 - is two flags:
   - `-i` connects what you type to standard in on the container
   - `-t` shows output text nicely formatted
+
+`docker exec -it $id sh`
+
+- runs a shell in the container with \$id
+- control-d to leave if control-c doesn't work
+- typing exit may also work
+- can use zsh or bash instead of sh, depending on the container
+
+`docker run -it $image sh`
+
+- starts the image with a shell
