@@ -1,5 +1,5 @@
 # Specify a base image
-FROM alpine
+FROM node:alpine
 
 # Install deps
 RUN npm install
