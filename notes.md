@@ -108,3 +108,8 @@ Run `docker build -t andreidobrinski/redis:latest .` to tag an image.
 - convention is username/reponame:version(tag)
 - can later be run with `docker run andreidobrinski/redis` without specifying a tag
 - no tag specified = latest will run
+
+`docker run -p 8080:8080 $imageId`
+
+- routes port 8080 of our localhost to 8080 of container
+- container port is on the right of the colon
