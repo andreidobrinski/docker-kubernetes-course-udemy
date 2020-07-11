@@ -88,3 +88,12 @@ CLI
 `docker run -it $image sh`
 
 - starts the image with a shell
+
+Dockerfile
+
+- plain text file with config to tell how container will run
+- config goes to docker client > docker server > usable image
+- Flow:
+  - specify a base image
+  - run commands for dependencies
+  - startup command for image
