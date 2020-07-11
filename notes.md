@@ -36,3 +36,44 @@ Image
 
 - filesystem snapshot with a startup command
   - snapshot of processes
+
+CLI
+
+`docker ps`
+
+- list all running containers
+
+`docker ps --all`
+
+- list all containers ever created
+
+`docker run` = `docker create` + `docker start`
+
+`docker system prune`
+
+- deletes stopped container and build cache
+
+`docker start -a`
+
+- log output of run through terminal with -a flag
+
+`docker logs $id`
+
+- gets record from logs emitted from that container
+
+`docker stop $id`, `docker kill $id`
+
+- stop terminates the signal, with cleanup grace period (SIGTERM)
+- kill terminates signal immediately
+- stop is preferred, kill is used if container is locked up
+- with stop, if container doesn't stop in 10 sec, docker will run kill automatically
+
+`docker exec -it $id redis-cli`
+
+- runs `redis-cli` in the container with \$id in a fresh terminal window
+
+`-it` flag
+
+- is two flags:
+  - `-i` connects what you type to standard in on the container
+  - `-t` shows output text nicely formatted
