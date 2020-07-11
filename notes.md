@@ -1,7 +1,7 @@
 Docker Ecosystem
 
-- Docker Client
-- Docker Server
+- Docker Client (CLI)
+- Docker Server (Daemon)
 - Docker Machine
 - Docker Images
 - Docker Hub
