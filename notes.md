@@ -118,3 +118,11 @@ Run `docker build -t andreidobrinski/redis:latest .` to tag an image.
 
 - runs docker-compose.yml from the current working directory
 - `--build` will rebuild the images first
+
+`docker-compose up -d`
+
+- runs in the bg. lets your use the terminal instance after finished
+
+`docker-compose down`
+
+- stops running docker-compose instance
