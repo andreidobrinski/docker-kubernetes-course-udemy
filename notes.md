@@ -129,7 +129,7 @@ Run `docker build -t andreidobrinski/redis:latest .` to tag an image.
 
 Restart policies
 
-- no: never restarts, not with stop or crash
+- "no": never restarts, not with stop or crash. specifically needs to be in quotes
 - always: always attemps to restart
 - on-failure: restarts only if container stops with an error code
 - unless-stopped: always restart unless the dev force stops it
