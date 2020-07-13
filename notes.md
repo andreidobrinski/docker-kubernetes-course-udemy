@@ -113,3 +113,8 @@ Run `docker build -t andreidobrinski/redis:latest .` to tag an image.
 
 - routes port 8080 of our localhost to 8080 of container
 - container port is on the right of the colon
+
+`docker-compose up --build`
+
+- runs docker-compose.yml from the current working directory
+- `--build` will rebuild the images first
