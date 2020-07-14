@@ -133,3 +133,7 @@ Restart policies
 - always: always attemps to restart
 - on-failure: restarts only if container stops with an error code
 - unless-stopped: always restart unless the dev force stops it
+
+`docker build -f Dockerfile.dev .`
+
+- build from dev dockerfile
