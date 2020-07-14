@@ -148,3 +148,7 @@ Restart policies
 - maps ports to 3000
 - reference local app folder except use node_modules from container
 - allows for reloading like on regular local dev
+
+`docker run -it $id npm run test`
+
+- run interactive test in terminal window
