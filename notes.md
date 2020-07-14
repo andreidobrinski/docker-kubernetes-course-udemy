@@ -141,3 +141,10 @@ Restart policies
 `docker run -it -p 3000:3000 CONTAINER_ID`
 
 - runs react project in container, maps to port 3000
+
+`docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app CONTAINER_ID`
+
+- run docker container
+- maps ports to 3000
+- reference local app folder except use node_modules from container
+- allows for reloading like on regular local dev
