@@ -137,3 +137,7 @@ Restart policies
 `docker build -f Dockerfile.dev .`
 
 - build from dev dockerfile
+
+`docker run -it -p 3000:3000 CONTAINER_ID`
+
+- runs react project in container, maps to port 3000
