@@ -152,3 +152,7 @@ Restart policies
 `docker run -it $id npm run test`
 
 - run interactive test in terminal window
+
+`docker exec -it $id npm run test`
+
+- run tests in existing running container
