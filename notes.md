@@ -156,3 +156,7 @@ Restart policies
 `docker exec -it $id npm run test`
 
 - run tests in existing running container
+
+`docker run -p 8080:80 $id`
+
+- for mapping nginx default port 80 to localhost 8080
