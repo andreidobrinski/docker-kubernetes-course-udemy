@@ -4,6 +4,7 @@ services:
   - docker
 
 before_install:
+  - cd react-frontend
   - docker build -t andreidobrinski/docker-course-udemy -f Dockerfile.dev .
 
 script:
