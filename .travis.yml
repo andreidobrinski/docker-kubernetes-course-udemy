@@ -10,3 +10,13 @@ before_install:
 
 script:
   - docker run -e CI=true andreidobrinski/docker-course-udemy npm run test
+#
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-west-2"
+#   app: "docker-course-udemy"
+#   env: "docker-env"
+#   bucket_name: "get-s3-bucket-name"
+#   bucket_path: "docker-course-udemy"
+#   on:
+#     branch: master
