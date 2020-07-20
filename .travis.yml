@@ -3,8 +3,9 @@ language: generic
 services:
   - docker
 
+before_script: cd react-frontend
+
 before_install:
-  - cd react-frontend
   - docker build -t andreidobrinski/docker-course-udemy -f Dockerfile.dev .
 
 script:
