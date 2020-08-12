@@ -186,3 +186,10 @@ Kubernetes
 - Cluster is formed from a 'master' with 'nodes'
 - master manages the nodes created
 - a node contains containers
+- used in development with minikube
+  - minikube manages VM (local only)
+  - kubectl manages containers in node
+- used in prod with a 'managed solution'
+  - amazon elastic container services for kubernetes
+  - google cloud kubenetes engine
+  - roll your own
