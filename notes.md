@@ -177,3 +177,12 @@ AWS Elastic Cache
 AWS Relational Database Service (RDS)
 
 - Postgres
+
+Kubernetes
+
+- runs different containers across machines
+- manages different containers with different images
+- best used when the conatiners differ from one another
+- Cluster is formed from a 'master' with 'nodes'
+- master manages the nodes created
+- a node contains containers
