@@ -14,3 +14,11 @@ after_success:
   - docker build -t andreidobrinski/multi-nginx ./nginx
   - docker build -t andreidobrinski/multi-server ./server
   - docker build -t andreidobrinski/multi-worker ./worker
+  # login to docker CLI
+  # use env vars from travis
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # take images and push them to docker hub
+  - docker push andreidobrinski/multi-client
+  - docker push andreidobrinski/multi-nginx
+  - docker push andreidobrinski/multi-server
+  - docker push andreidobrinski/multi-worker
