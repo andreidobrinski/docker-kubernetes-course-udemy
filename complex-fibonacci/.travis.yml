@@ -22,3 +22,17 @@ after_success:
   - docker push andreidobrinski/multi-nginx
   - docker push andreidobrinski/multi-server
   - docker push andreidobrinski/multi-worker
+
+# deploy with IAM
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: us-west-1
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: "bucket-name"
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
