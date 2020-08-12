@@ -160,3 +160,20 @@ Restart policies
 `docker run -p 8080:80 $id`
 
 - for mapping nginx default port 80 to localhost 8080
+
+Multi-Container Architecture
+
+Elastic Beanstalk Instance
+
+- Nginx (used for initial routing to either client or express server)
+- client (FE React with another nginx)
+- express server
+- worker
+
+AWS Elastic Cache
+
+- Redis
+
+AWS Relational Database Service (RDS)
+
+- Postgres
