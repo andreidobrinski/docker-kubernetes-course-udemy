@@ -193,3 +193,9 @@ Kubernetes
   - amazon elastic container services for kubernetes
   - google cloud kubenetes engine
   - roll your own
+- all containers are built before kubernetes deals with them
+  - images come from docker hub
+- one config file per object
+  - one config file for the container
+- have to manually set up all networking (no port mapping like docker-compose)
+  - one config file for networking
