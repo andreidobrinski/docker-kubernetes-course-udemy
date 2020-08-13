@@ -199,3 +199,29 @@ Kubernetes
   - one config file for the container
 - have to manually set up all networking (no port mapping like docker-compose)
   - one config file for networking
+- a Node is a virtual machine in k8s
+
+Kubernetes Object
+
+- example object types: StatefulSet, ReplicaController, Pod, Service
+- marked as `kind` in the yaml config
+
+Pod
+
+- grouping of containers with a common purpose
+- The smallest thing you can deploy since you can't deploy a single container like with Docker
+
+Service
+
+- to set up networking in a k8s cluster
+- subtypes: ClusterIP, NodePort, LoadBalancer, Ingress.
+  - NodePort: expose a container to the outside world (for dev only)
+- objects are linked through label names
+  - label inside pod and selector inside service
+- ports should match
+  - containerPort in pod and targetPort in service
+  - nodePort is what port the browser uses. between 30000-32767
+
+apiVersion
+
+- defines a different set of objects we can use
