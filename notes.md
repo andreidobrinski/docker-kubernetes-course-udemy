@@ -185,6 +185,7 @@ Kubernetes
 - best used when the conatiners differ from one another
 - Cluster is formed from a 'master' with 'nodes'
 - master manages the nodes created
+  - developers only interact with the master, not with the individual nodes
 - a node contains containers
 - used in development with minikube
   - minikube manages VM (local only)
