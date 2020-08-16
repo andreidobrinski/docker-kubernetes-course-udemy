@@ -240,3 +240,11 @@ Deployments 2 types:
 - is not concerned with the current state
 - sends a config file to kubernetes to deal with how handle current state and migration path
 - usually the preferred approach
+- fails when updating only a port on a config. only certain fields are allowed to be updated
+  - changing Pod to Deployment object type fixes this
+
+Pods vs Deployment
+
+- runs a single set of containers / runs a set of identical pods
+- good for dev purposes / good for dev and prod
+- Deployment monitors the state of pods and updates if necessary
