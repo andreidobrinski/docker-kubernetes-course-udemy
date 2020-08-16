@@ -16,4 +16,4 @@ spec:
         - name: client
           image: andreidobrinski/multi-client
           ports:
-            - containerPort: 9999
+            - containerPort: 3000
