@@ -222,6 +222,7 @@ Service
 - ports should match
   - containerPort in pod and targetPort in service
   - nodePort is what port the browser uses. between 30000-32767
+- services are useful to keep developing on the same local IP address if pods are deleted or changed
 
 apiVersion
 
