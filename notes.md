@@ -226,3 +226,17 @@ Service
 apiVersion
 
 - defines a different set of objects we can use
+
+Deployments 2 types:
+
+1. Imperative Deployments
+
+- do exactly these steps to arrive at this container setup
+- involves computing current state, desired state and migration path between the two states
+
+2. Declarative Deployments
+
+- container setup should look like this. make it happen
+- is not concerned with the current state
+- sends a config file to kubernetes to deal with how handle current state and migration path
+- usually the preferred approach
