@@ -295,3 +295,11 @@ Persistent Volume Claim
   - statically provisioned is created ahead of time, before the pod config asks for it
   - dynamically gets created JIT when pod config asks for it
 - PVC is the storage options, the config decides which one it needs
+  - on local (dev) it's the hard drive
+  - on the cloud, there are options based on the cloud provider
+
+PVC Access Modes
+
+- ReadWriteOnce: can be used by a single node
+- ReadOnlyMany: multiple nodes can read it
+- ReadWriteMany: multiple nodes can read and write
