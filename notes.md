@@ -257,3 +257,9 @@ No easy way to update an image in a k8s config file
   - adds an extra step to deploys
 - use an imperative command to update the image version
   - need to tag images with version when pushing up to docker hub
+
+Why to connect to the version of Docker in the VM Node?
+
+- have access to all docker debugging CLI tools
+- manually kill docker to test k8s restart
+- delete cached images in the node
