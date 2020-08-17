@@ -249,3 +249,11 @@ Pods vs Deployment
 - runs a single set of containers / runs a set of identical pods
 - good for dev purposes / good for dev and prod
 - Deployment monitors the state of pods and updates if necessary
+
+No easy way to update an image in a k8s config file
+
+- cant use env vars in config file
+- can tag built images with a version number and reference that version in the k8s config
+  - adds an extra step to deploys
+- use an imperative command to update the image version
+  - need to tag images with version when pushing up to docker hub
