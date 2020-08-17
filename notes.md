@@ -223,6 +223,8 @@ Service
   - containerPort in pod and targetPort in service
   - nodePort is what port the browser uses. between 30000-32767
 - services are useful to keep developing on the same local IP address if pods are deleted or changed
+- ClusterIP helps connect Deployment objects within a node to other Deployment objects within that node
+  - Does not allow traffic in from the outside
 
 apiVersion
 
