@@ -303,3 +303,10 @@ PVC Access Modes
 - ReadWriteOnce: can be used by a single node
 - ReadOnlyMany: multiple nodes can read it
 - ReadWriteMany: multiple nodes can read and write
+
+Secrets
+
+- create a secret using an imperative command
+- need to create the secret for every environment
+- used for PGPASSWORD:
+  - `kubectl create secret generic secret_name --from-literal key=value`
