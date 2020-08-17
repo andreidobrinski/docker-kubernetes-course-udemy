@@ -275,3 +275,23 @@ Postgres PVC
 - a new pod is created without any data carried over
   - data gets lost with a crash
   - PVC helps prevent this
+
+k8s Volume
+
+- generic terminology: some type of mechanism that allows a container to access a filesystem outside itself
+- in k8s: an object that allows a container to store persistent data at the pod level
+  - can be accessed by any container inside the pod
+  - volume lives inside the pod
+  - volume is tied to pod. if pod dies, the volume inside dies.
+
+Persistent Volume
+
+- not tied to any specific pod or container
+- can stay alive if a pod or container that's tied to it goes down
+
+Persistent Volume Claim
+
+- storage options: statically provisioned persistent volume and dynamically provisioned persistent volume
+  - statically provisioned is created ahead of time, before the pod config asks for it
+  - dynamically gets created JIT when pod config asks for it
+- PVC is the storage options, the config decides which one it needs
