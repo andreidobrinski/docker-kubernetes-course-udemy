@@ -267,3 +267,11 @@ Why to connect to the version of Docker in the VM Node?
 - have access to all docker debugging CLI tools
 - manually kill docker to test k8s restart
 - delete cached images in the node
+
+Postgres PVC
+
+- PVC: Persistent Volume Claim
+- when a pod crashes, the data gets lost with it
+- a new pod is created without any data carried over
+  - data gets lost with a crash
+  - PVC helps prevent this
