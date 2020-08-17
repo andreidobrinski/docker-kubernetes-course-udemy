@@ -206,6 +206,7 @@ Kubernetes Object
 
 - example object types: StatefulSet, ReplicaController, Pod, Service
 - marked as `kind` in the yaml config
+- can add multiple configs in the same file is separated with a line of `---`
 
 Pod
 
