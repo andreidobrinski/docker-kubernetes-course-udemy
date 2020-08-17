@@ -226,6 +226,7 @@ Service
 - services are useful to keep developing on the same local IP address if pods are deleted or changed
 - ClusterIP helps connect Deployment objects within a node to other Deployment objects within that node
   - Does not allow traffic in from the outside
+- LoadBalancer: legacy way of getting outside traffic into app. Prefer Ingress over this
 - Ingress service handles traffic from outside and allows it into the kubernetes node
 
 apiVersion
