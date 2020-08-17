@@ -228,6 +228,16 @@ Service
   - Does not allow traffic in from the outside
 - LoadBalancer: legacy way of getting outside traffic into app. Prefer Ingress over this
 - Ingress service handles traffic from outside and allows it into the kubernetes node
+  - different implementations, this course uses Nginx Ingress `ingress-nginx`, not `kubernetes-ingress`
+  - ingress-nginx setup is different depending on env (local, GC, AWS etc)
+  - ingress config is the set of rules
+  - feeds into the ingress controller, which accepts incoming traffic (not accurate for all projects but is the case in this course)
+    - controller usually implements config but doesnt accept traffic
+
+Installing Ingress
+
+- install link for docker [desktop](https://kubernetes.github.io/ingress-nginx/deploy/#docker-for-mac)
+- verify installation: `kubectl get pods -n ingress-nginx`
 
 apiVersion
 
