@@ -321,3 +321,8 @@ Secrets
 - need to create the secret for every environment
 - used for PGPASSWORD:
   - `kubectl create secret generic secret_name --from-literal key=value`
+
+Using a Git SHA for unique image ids sent to docker
+
+- each push generates a unique id
+- ability to checkout a SHA for debugging purposes
