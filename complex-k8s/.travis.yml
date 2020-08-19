@@ -24,3 +24,9 @@ before_install:
 
 script:
   - docker run -e CI=true USERNAME/imageName npm run test
+
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: master
