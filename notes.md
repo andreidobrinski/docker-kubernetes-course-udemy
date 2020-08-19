@@ -340,3 +340,7 @@ Role-based Access Control (RBAC)
 - RoleBinding
   - authorizes an account to do a certain set in a single namespace
   - lets a user or service do things
+
+Skaffold
+
+- for local development in a k8s environment
