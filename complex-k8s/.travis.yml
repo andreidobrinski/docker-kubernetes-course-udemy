@@ -1,0 +1,21 @@
+sudo: required
+services:
+  - docker
+before_install:
+  #- openssl command copy paste
+  - curl https://sdk.cloud.google.com | bash > /dev/null;
+  - source $HOME/google-cloud-sdk/path.bash.inc
+  - gcloud components update kubectl
+  - gcloud auth activate-service-account --key-file service-account.json
+  # create a service account on gcloud/kubernetes
+  # download json auth file
+  #- docker run -it -v $(pwd):/app ruby:2.4 sh
+  #- gem install travis
+  #- travis login
+  # copy auth file to app folder
+  #- travis encrypt-file service-account.json -r githubUserName/repoName
+  # copy openssl command to top of array
+  # add encrypted account file to git repo
+  - gcloud config set project PROJECT_ID
+  - gcloud config set compute/zone ZONE_ID
+  - gcloud container clusters get-credentials CLUSTER_ID
