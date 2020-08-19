@@ -326,3 +326,17 @@ Using a Git SHA for unique image ids sent to docker
 
 - each push generates a unique id
 - ability to checkout a SHA for debugging purposes
+
+Role-based Access Control (RBAC)
+
+- User Accounts
+  - a person admin on the cluster
+  - identifies a person
+- Service Accounts
+  - a pod admin on the cluster
+  - identifies a program
+- ClusterRoleBinding
+  - authorizes an account to do a certain set of actions on the cluster
+- RoleBinding
+  - authorizes an account to do a certain set in a single namespace
+  - lets a user or service do things
